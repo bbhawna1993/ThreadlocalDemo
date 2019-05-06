@@ -7,13 +7,11 @@ public class OverrideInitialValue {
 		{
 			public Object initialValue()
 			{
-				return "abc";
+				return "default value";
 			}
 		};
 		System.out.println(myThreadLocal.get());
-		myThreadLocal.set("override");
-		System.out.println(myThreadLocal.get());
-		myThreadLocal.remove();
+		myThreadLocal.set("overriden value");
 		System.out.println(myThreadLocal.get());
 		myThreadLocal.remove();
 		System.out.println(myThreadLocal.get());
